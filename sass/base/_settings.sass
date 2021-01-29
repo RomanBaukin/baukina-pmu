@@ -1,0 +1,82 @@
+*
+  box-sizing: border-box
+
+@font-face
+  font-family: 'Inter-Regular'
+  src: url('../fonts/Inter-Regular.woff') format('woff'),
+  url('../fonts/Inter-Regular.woff2') format('woff2')
+  font-weight: 400
+  font-style: normal
+  font-display: swap
+@font-face
+  font-family: 'Inter-Medium'
+  src: url('../fonts/Inter-Medium.woff') format('woff'),
+  url('../fonts/Inter-Medium.woff2') format('woff2')
+  font-weight: 500
+  font-style: normal
+  font-display: swap
+@font-face
+  font-family: 'PlayfairDisplay-Black'
+  src: url('../fonts/PlayfairDisplay-Black.woff') format('woff'),
+  url('../fonts/PlayfairDisplay-Black.woff2') format('woff2')
+  font-weight: 900
+  font-style: normal
+  font-display: swap
+@font-face
+  font-family: 'PlayfairDisplay-Bold'
+  src: url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+  url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2')
+  font-weight: 700
+  font-style: normal
+  font-display: swap
+
+body
+  font-family: 'Inter-Regular', sans-serif
+.container
+  max-width: 1140px
+  margin: auto
+img
+  max-width: 100%
+.link
+  text-decoration: none
+  color: inherit
+  cursor: default
+.button
+  display: block
+  width: 240px
+  max-height: 50px
+  font-family: 'Inter-Medium'
+  font-size: 15px
+  text-decoration: none
+  text-align: center
+  color: inherit
+  padding: 16px 0
+  cursor: default
+  &__registration
+    background-color: #000000
+    color: #ffffff
+    border: 2px solid #000000
+  &__consultation
+    border: 2px solid #000000
+.title
+  font-family: 'PlayfairDisplay-Bold', serif
+  font-size: 55px
+  margin: 0
+  &__background
+    position: absolute
+    top: -75px
+    left: 0
+    width: 156px
+    height: 208px
+    background: #FBF0EC
+    border-radius: 0px 150px 0px 0px
+    z-index: -1
+
+@media (min-width: 992px)
+  .link
+    &:hover
+      color: #ffa17e
+  .link, .button
+    cursor: pointer
+
+
