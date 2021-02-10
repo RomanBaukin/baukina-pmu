@@ -1,0 +1,107 @@
+.course {
+  margin-bottom: 100px;
+
+  .container {
+    position: relative;
+  }
+
+  &__descr {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      border-top: 1px solid #000000;
+      padding: 30px 0;
+    }
+
+    &-img {
+      width: 300px;
+      overflow: hidden;
+      margin-right: 40px;
+
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &-text {
+      h3 {
+        font-family: 'PlayfairDisplay-Bold', serif;
+        font-size: 25px;
+        line-height: 33px;
+      }
+
+      p {
+        width: 600px;
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__price {
+    h3 {
+      font-family: 'PlayfairDisplay-Bold', serif;
+      font-size: 35px;
+      line-height: 47px;
+      margin-bottom: 50px;
+    }
+  }
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &__appointment {
+    font-family: 'PlayfairDisplay-Bold', serif;
+    font-size: 25px;
+    line-height: 33px;
+    margin-top: 0;
+  }
+  &__ending {
+    font-size: 17px;
+    line-height: 24px;
+    width: 500px;
+  }
+}
+
+.item {
+  padding: 30px 22px;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #000000;
+  &__title,
+  &__price {
+    font-family: 'PlayfairDisplay-Bold', serif;
+    font-size: 25px;
+    line-height: 33px;
+  }
+  &__title {
+    margin: 0 0 30px;
+  }
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 170px;
+  }
+  &__duration {
+    margin: 0;
+  }
+  &__price {
+    text-align: center;
+  }
+  &__button {
+    margin: 0 auto;
+  }
+}
