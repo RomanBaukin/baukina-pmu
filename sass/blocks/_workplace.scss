@@ -1,0 +1,22 @@
+.workplace {
+  margin-bottom: 100px;
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  &__right {
+    width: 500px;
+  }
+  &__left {
+    width: 500px;
+  }
+  &__img {
+    margin-bottom: 30px;
+  }
+  &__line {
+    border-top: 1px solid #000000;
+  }
+}
