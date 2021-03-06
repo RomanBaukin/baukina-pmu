@@ -42,4 +42,9 @@
       margin-right: 30px;
     }
   }
+  &__map {
+    iframe {
+      border: 0;
+    }
+  }
 }

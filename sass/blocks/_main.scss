@@ -1,0 +1,51 @@
+.main {
+  margin-top: 70px;
+
+  &__wrapper {
+    position: relative;
+    min-height: 626px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    width: 65%;
+    padding-top: 160px;
+  }
+
+  &__descr {
+    width: 478px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+
+  &__buttons {
+    display: flex;
+
+    &>.button__registration {
+      margin-right: 20px;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 626px;
+    background: #FBF1EC;
+    border-radius: 0px 313px 0px 0px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    img {
+      width: 409px;
+      max-height: 592px;
+    }
+  }
+}

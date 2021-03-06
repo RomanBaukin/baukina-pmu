@@ -1,0 +1,55 @@
+.works {
+  margin-bottom: 100px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+
+    h3 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+      font-family: 'PlayfairDisplay-Black';
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+.work-01 {
+  width: 300px;
+  background: rgba(208, 148, 119, 0.26);
+
+  p {
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+.work-03 {
+  padding-top: 30px;
+}
+
+.work-05 {
+  width: 298px;
+  height: 360px;
+  margin-top: 50px;
+  background: rgba(208, 148, 119, 0.26);
+
+  p {
+    margin: 0;
+    padding: 10px;
+  }
+}
