@@ -1,29 +1,37 @@
 .contacts {
+  margin-bottom: 50px;
+
   &__container {
     display: flex;
     justify-content: space-between;
   }
+
   &__title {
     margin-bottom: 30px;
   }
+
   &__form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     input,
     textarea {
       border: 1px solid rgba(0, 0, 0, 0.75);
       padding: 13px 20px;
       margin-bottom: 30px;
     }
+
     textarea {
       resize: none;
       height: 90px;
     }
+
     button {
       width: 100%;
     }
   }
+
   &__feedback {
     position: relative;
     max-width: 400px;
@@ -31,20 +39,28 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
   &__address {
     display: flex;
+    margin-top: 100px;
+
     img {
       margin-right: 20px;
     }
   }
+
   &__social {
     img {
       margin-right: 30px;
+      cursor: pointer;
     }
   }
+
   &__map {
     iframe {
       border: 0;
+      width: 700px;
+      height: 100%;
     }
   }
 }

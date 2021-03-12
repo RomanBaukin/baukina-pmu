@@ -54,6 +54,54 @@
   .black-line {
     width: 500px;
   }
+
+  .block {
+    &__top--right {
+      width: 550px;
+    }
+  }
+
+  .course {
+    .title__background {
+      height: 160px;
+    }
+  }
+
+  .store {
+    .content {
+      &__right {
+        width: 550px;
+      }
+    }
+  }
+
+  .workplace {
+    .content {
+      &__left {
+        width: 450px;
+      }
+
+      &__right {
+        width: 400px;
+      }
+    }
+  }
+
+  .contacts {
+    &__feedback {
+      max-width: 300px;
+
+      .title__background {
+        height: 160px;
+      }
+    }
+
+    &__map {
+      iframe {
+        width: 550px;
+      }
+    }
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -165,6 +213,126 @@
   .black-line {
     width: 400px;
   }
+
+  .store {
+    .content {
+      p {
+        font-size: 13px;
+        line-height: 16px;
+      }
+
+      &__left {
+        width: 35%;
+      }
+
+      &__right {
+        width: 55%;
+      }
+    }
+  }
+
+  .block {
+    &__top--right {
+      width: 345px;
+
+      h3 {
+        width: 100%;
+      }
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+
+  .course {
+    .title__background {
+      height: 135px;
+    }
+
+    &__descr-text {
+      h3 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 16px;
+        width: 420px;
+      }
+    }
+
+    &__appointment {
+      font-size: 22px;
+    }
+
+    &__ending {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+
+  .item {
+    width: 185px;
+    height: 330px;
+    padding: 15px 10px;
+
+    &__title {
+      font-size: 19px;
+      line-height: 25px;
+      margin: 0 0 15px;
+    }
+
+    &__descr {
+      font-size: 13px;
+      line-height: 16px;
+    }
+
+    &__button {
+      width: 160px;
+    }
+
+    &__price {
+      font-size: 22px;
+      margin: 15px 0;
+    }
+  }
+
+  .workplace {
+    .content {
+      &__left {
+        width: 50%;
+      }
+
+      &__right {
+        width: 40%;
+      }
+
+      &__descr {
+        font-size: 13px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .contacts {
+    &__feedback {
+      .title__background {
+        height: 135px;
+      }
+    }
+
+    &__address {
+      margin-top: 30px;
+    }
+  }
+
+  .map {
+    iframe {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -214,6 +382,121 @@
 
   .black-line {
     display: none;
+  }
+
+  .block {
+    &__top {
+      &--left {
+        width: 35%;
+      }
+
+      &--right {
+        width: 55%;
+      }
+    }
+
+    &__bottom {
+      &--left {
+        margin-right: 0;
+        width: 35%;
+      }
+
+      &--right {
+        width: 55%;
+      }
+    }
+
+    &__title {
+      font-size: 22px;
+      line-height: 29px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .store {
+    .content {
+      &__right {
+        h3 {
+          font-size: 22px;
+          line-height: 29px;
+        }
+      }
+    }
+  }
+
+  .course {
+    .title__background {
+      height: 195px;
+    }
+
+    &__descr {
+      &-text {
+        flex-basis: 70%;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__price {
+      h3 {
+        font-size: 27px;
+        line-height: 36px;
+      }
+    }
+  }
+
+  .item {
+    flex-basis: 80%;
+    align-items: center;
+    height: 250px;
+    margin-bottom: 25px;
+
+    &__descr {
+      min-height: 140px;
+    }
+
+    &__title,
+    &__duration {
+      text-align: center;
+    }
+  }
+
+  .workplace {
+    .content {
+      &__img {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .contacts {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__feedback {
+      margin-bottom: 30px;
+      max-width: 100%;
+
+      .title__background {
+        height: 100px;
+      }
+    }
+
+    &__social {
+      margin: 0 auto;
+    }
+  }
+
+  .map {
+    height: 250px;
   }
 }
 
@@ -306,6 +589,7 @@
 
     &__title {
       max-width: 160px;
+      margin-bottom: 25px;
     }
 
     &__list {
@@ -339,15 +623,184 @@
   }
 
   .promotions {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
     &__img {
-      width: 80%;
-      height: 80%;
+      width: 129px;
+      height: 152px;
+
+      &--left {
+        margin-bottom: 20px;
+      }
+
+      &--right {
+        margin-top: 20px;
+      }
     }
 
     &__item {
+      flex-basis: 140px;
+
       h3 {
         font-size: 17px;
         line-height: 23px;
+      }
+
+      p {
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+  }
+
+  .store {
+    margin-bottom: 50px;
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    .content {
+      p {
+        font-size: 10px;
+        line-height: 12px;
+      }
+
+      &__right {
+        h3 {
+          font-size: 17px;
+          line-height: 23px;
+        }
+      }
+
+      &__left {
+        .button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .block {
+    &__title {
+      font-size: 17px;
+      line-height: 23px;
+    }
+
+    p {
+      font-size: 10px;
+      line-height: 140%;
+    }
+
+    &__top {
+      &--right {
+
+        p:nth-child(3),
+        img {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+
+  .recomendation {
+    margin-bottom: 50px;
+  }
+
+  .course {
+    margin-bottom: 50px;
+
+    .title__background {
+      height: 100px;
+    }
+
+    &__descr {
+      &-text {
+        h3 {
+          font-size: 17px;
+          line-height: 23px;
+        }
+      }
+
+      li {
+        flex-direction: column;
+      }
+
+      &-img {
+        width: 270px;
+        margin: 0 auto;
+      }
+    }
+
+    &__price {
+      h3 {
+        font-size: 21px;
+        line-height: 23px;
+      }
+    }
+
+    &__appointment {
+      font-size: 17px;
+    }
+
+    &__ending {
+      font-size: 10px;
+      line-height: 140%;
+      width: 100%;
+    }
+
+    &__list {
+      margin-bottom: 10px;
+    }
+  }
+
+  .item {
+    height: 275px;
+  }
+
+  .workplace {
+    margin-bottom: 50px;
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    .content {
+      &__descr {
+        font-size: 10px;
+        line-height: 140%;
+      }
+    }
+  }
+
+  .contacts {
+    &__feedback {
+      .title__background {
+        width: 50px;
+        height: 40px;
+      }
+    }
+
+    &__form {
+
+      input,
+      textarea {
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+
+    &__address {
+      margin-bottom: 20px;
+
+      img {
+        margin-right: 10px;
+        width: 20px;
       }
 
       p {
