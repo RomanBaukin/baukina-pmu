@@ -99,6 +99,8 @@ img {
 
 @media (min-width: 992px) {
   .link {
+    transition: color 0.3s;
+
     &:hover {
       color: #ffa17e;
     }
@@ -107,5 +109,14 @@ img {
   .link,
   .button {
     cursor: pointer;
+  }
+
+  .item {
+    transition: transform 0.3s, background 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+      background: #FBF0EC;
+    }
   }
 }
