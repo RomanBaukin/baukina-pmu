@@ -5,8 +5,8 @@
 
 //Переменная $name,$phone, $mail получает данные при помощи метода POST из формы
 $name = $_POST['user_name'];
-// $phone = $_POST['phone'];
-$email = $_POST['user_email'];
+$phone = $_POST['user_phone'];
+// $email = $_POST['user_email'];
 $message = $_POST['user_message'];
 
 //в переменную $token нужно вставить токен, который нам прислал @botFather
@@ -18,7 +18,7 @@ $chat_id = "-1001233050136";
 //Далее создаем переменную, в которую помещаем PHP массив
 $arr = array(
   'Имя пользователя: ' => $name,
-  'Email' => $email,
+  'Телефон' => $phone,
   'Сообщение:' => $message
 );
 

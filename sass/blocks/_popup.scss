@@ -1,0 +1,39 @@
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &__content {
+    position: fixed;
+    text-align: center;
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    padding: 50px;
+    background-color: #ffffff;
+  }
+
+  &__close {
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+    right: 1rem;
+    width: 2rem;
+    text-align: center;
+    border: none;
+    font-size: 3rem;
+    background-color: #ffffff;
+    color: #ffa17e;
+    outline: none;
+    cursor: pointer;
+  }
+}

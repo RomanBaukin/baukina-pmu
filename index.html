@@ -7,6 +7,7 @@
   <title>Nadezhda Baukina</title>
   <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.min.css" />
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -54,8 +55,8 @@
             перманентного макияжа
           </p>
           <div class="main__buttons">
-            <a href="#" class="button button__registration">Записаться на процедуру</a>
-            <a href="#" class="button button__consultation">Бесплатная консультация</a>
+            <button class="button button__registration">Записаться на процедуру</button>
+            <button class="button button__consultation">Бесплатная консультация</button>
           </div>
         </div>
         <!-- /.descr -->
@@ -78,7 +79,7 @@
             <div class="price__descr">
               <h3>Губы</h3>
               <p>Акварель/помадный эффект - 200 лари</p>
-              <a href="#" class="button button__registration">Записаться на процедуру</a>
+              <button class="button button__registration">Записаться на процедуру</button>
             </div>
             <!-- /.price__descr -->
             <div class="price__photo">
@@ -93,7 +94,7 @@
                 Пудровые/теневая растушевка - 200 лари<br />Волосковая техника
                 - 200 лари
               </p>
-              <a href="#" class="button button__registration">Записаться на процедуру</a>
+              <button class="button button__registration">Записаться на процедуру</button>
             </div>
             <!-- /.price__descr -->
             <div class="price__photo">
@@ -108,7 +109,7 @@
                 Межресничная стрелка - 150 лари<br />Классическая стрелка -
                 200 лари<br />Стрелка с тенью (bicolour) - 230 лари
               </p>
-              <a href="#" class="button button__registration">Записаться на процедуру</a>
+              <button class="button button__registration">Записаться на процедуру</button>
             </div>
             <!-- /.price__descr -->
             <div class="price__photo">
@@ -120,7 +121,7 @@
             <div class="price__descr">
               <h3>Коррекция</h3>
               <p>50% от стоимости первой процедуры (до 3 месяцев)</p>
-              <a href="#" class="button button__registration">Записаться на процедуру</a>
+              <button class="button button__registration">Записаться на процедуру</button>
             </div>
             <!-- /.price__descr -->
             <div class="price__photo">
@@ -135,7 +136,7 @@
                 Обновление(более 3 месяцев) - 70%&nbsp;от&nbsp;стоимости по
                 прайсу
               </p>
-              <a href="#" class="button button__registration">Записаться на процедуру</a>
+              <button class="button button__registration">Записаться на процедуру</button>
             </div>
             <!-- /.price__descr -->
             <div class="price__photo">
@@ -150,7 +151,7 @@
                 Удаление ремувером(1 процедура) - 40&nbsp;лари (кол-во
                 процедур рассчитывается индивидуально)
               </p>
-              <a href="#" class="button button__registration">Записаться на процедуру</a>
+              <button class="button button__registration">Записаться на процедуру</button>
             </div>
             <!-- /.price__descr -->
             <div class="price__photo">
@@ -181,7 +182,7 @@
             Рефреш (обновление, более 3 месяцев)<br />70% от стоимости по
             прайсу
           </p>
-          <a href="#" class="button button__registration">Получить скидку</a>
+          <button class="button button__registration">Получить скидку</button>
           <div class="black-line black-line--top"></div>
           <!-- /.black-line -->
         </div>
@@ -192,7 +193,7 @@
             Скидка на вторую зону - 20&nbsp;лари<br />
             Скидка на третью зону - 30&nbsp;лари
           </p>
-          <a href="#" class="button button__registration">Получить скидку</a>
+          <button class="button button__registration">Получить скидку</button>
           <div class="promotions__img promotions__img--right">
             <img src="img/promo_2.jpg" alt="Фото девушки" />
           </div>
@@ -271,7 +272,7 @@
           </p>
           <img src="img/store-01.jpg" alt="Фото пигментов" />
           <img src="img/store-02.jpg" alt="Фото пигментов" />
-          <a href="#" class="button button__registration">Заказать пигменты</a>
+          <button class="button button__registration">Заказать пигменты</button>
         </div>
         <!-- /.content__left -->
         <div class="content__right">
@@ -480,7 +481,7 @@
             <div class="item__descr">
               <p class="item__duration">Продолжительность 10-14 дней</p>
               <p class="item__price">1000 USD</p>
-              <a href="#" class="button button__registration item__button">Записаться на курс</a>
+              <button class="button button__registration item__button">Записаться на курс</button>
             </div>
             <!-- /.item__descr -->
           </li>
@@ -491,7 +492,7 @@
             <div class="item__descr">
               <p class="item__duration">Продолжительность 5 дней</p>
               <p class="item__price">600 USD</p>
-              <a href="#" class="button button__registration item__button">Записаться на курс</a>
+              <button class="button button__registration item__button">Записаться на курс</button>
             </div>
             <!-- /.item__descr -->
           </li>
@@ -502,7 +503,7 @@
                 Предложение действительно только для уже работающих мастеров
               </p>
               <p class="item__price">300 USD</p>
-              <a href="#" class="button button__registration item__button">Записаться на курс</a>
+              <button class="button button__registration item__button">Записаться на курс</button>
             </div>
             <!-- /.item__descr -->
           </li>
@@ -553,9 +554,9 @@
         <div class="title__background"></div>
         <!-- /.title__background -->
         <form action="/send.php" method="POST" class="contacts__form">
-          <input type="name" placeholder="Имя" name="user_name" />
-          <input type="email" placeholder="Email" name="user_email" />
-          <textarea name="user_message" placeholder="Сообщение"></textarea>
+          <input type="text" placeholder="Имя" name="user_name" required>
+          <input type="tel" placeholder="Телефон" name="user_phone" maxlength="15" required>
+          <textarea name="user_message" placeholder="Сообщение" required></textarea>
           <button class="button button__registration" type="submit">
             Отправить
           </button>
@@ -581,14 +582,29 @@
       <!-- /.contacts__feedback -->
       <div class="contacts__map map">
         <iframe
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Af16611c9c421f638a324d5d87d2e6760b2fda27a7de5a0b8109fe0a0511d289f&amp;source=constructor"
-          frameborder="0"></iframe>
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Af16611c9c421f638a324d5d87d2e6760b2fda27a7de5a0b8109fe0a0511d289f&amp;source=constructor"></iframe>
       </div>
       <!-- /.contacts__map map -->
     </div>
     <!-- /.container -->
   </footer>
   <!-- /.contacts -->
+  <div class="popup">
+    <div class="popup__content">
+      <button class="popup__close">&times;</button>
+      <div class="popup__form">
+        <h3>Оставьте свои данные и я обязательно свяжусь с вами!</h3>
+        <form action="/send.php" method="POST" class="contacts__form">
+          <input type="text" placeholder="Имя" name="user_name" required>
+          <input type="tel" placeholder="Телефон" name="user_phone" maxlength="15" required>
+          <textarea name="user_message" placeholder="Сообщение" required></textarea>
+          <button class="button button__registration" type="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
