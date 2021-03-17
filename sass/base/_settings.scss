@@ -98,6 +98,16 @@ img {
   }
 }
 
+.arrow-up {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 5;
+}
+
 @media (min-width: 992px) {
   .link {
     transition: color 0.3s;

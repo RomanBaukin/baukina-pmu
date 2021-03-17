@@ -67,5 +67,23 @@ const smoothScrolling = () => {
   });
 };
 
+// Эффекты при скроллинге
+const scrollingPage = () => {
+  // функция для эффектов при прокрутке страницы
+  const btnArrowUp = document.getElementById('arrow-up'); //кнопка скроллинга страницы вверх
+
+  btnArrowUp.style.display = 'none'; //скрывает кнопку скроллинга вверх при обновлении страницы
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 781) {
+      //кнопка прокрутки страницы вверх появляется только после прокручивания первого блока
+      btnArrowUp.style.display = 'block';
+    } else {
+      btnArrowUp.style.display = 'none';
+    }
+  });
+};
+
 togglePopUp();
 smoothScrolling();
+scrollingPage();
