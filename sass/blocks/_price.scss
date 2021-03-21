@@ -47,11 +47,10 @@
 
   &__photo {
     width: 231px;
-    height: 195px;
+    height: 231px;
     overflow: hidden;
 
     img {
-      object-fit: cover;
       height: 100%;
       width: 100%;
     }
