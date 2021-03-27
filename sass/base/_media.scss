@@ -214,6 +214,26 @@
     width: 400px;
   }
 
+  .works {
+    .slider {
+      height: 500px;
+
+      &__dots {
+        display: none;
+      }
+
+      .greed {
+        &__item {
+          p {
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+
+  }
+
   .store {
     .content {
       p {
@@ -413,6 +433,26 @@
     }
   }
 
+  .works {
+    .slider {
+      height: 450px;
+
+      &__btn {
+        width: 25px;
+        height: 25px;
+        background-size: 15px;
+
+        &.next {
+          right: -35px;
+        }
+
+        &.prev {
+          left: -35px;
+        }
+      }
+    }
+  }
+
   .store {
     .content {
       &__right {
@@ -497,6 +537,12 @@
 
   .map {
     height: 250px;
+  }
+
+  .popup {
+    &__content {
+      width: 80%;
+    }
   }
 }
 
@@ -655,6 +701,17 @@
       p {
         font-size: 12px;
         line-height: 12px;
+      }
+    }
+  }
+
+  .works {
+    .slider {
+      height: 250px;
+
+      .greed {
+        column-gap: 10px;
+        row-gap: 10px;
       }
     }
   }

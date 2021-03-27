@@ -3,6 +3,9 @@
 /* https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXXXXX/getUpdates,
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
 
+// декодирование данных
+$_POST = json_decode(file_get_contents('php://input'), true);
+
 //Переменная $name,$phone, $mail получает данные при помощи метода POST из формы
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
@@ -32,9 +35,9 @@ foreach($arr as $key => $value) {
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
 //Если сообщение отправлено, напишет "Thank you", если нет - "Error"
-if ($sendToTelegram) {
-  echo "Thank you";
-} else {
-  echo "Error";
-}
+// if ($sendToTelegram) {
+//   header('Location: thanks.html');
+// } else {
+//   header('Location: error.html');
+// }
 ?>
