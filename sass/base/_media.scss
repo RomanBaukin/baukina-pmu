@@ -450,6 +450,15 @@
           left: -35px;
         }
       }
+
+      .greed {
+        &__item {
+          p {
+            font-size: 12px;
+            line-height: 12px;
+          }
+        }
+      }
     }
   }
 
@@ -542,6 +551,29 @@
   .popup {
     &__content {
       width: 80%;
+    }
+  }
+}
+
+@media(max-width: 767.98px) and (orientation: landscape) {
+  .popup {
+    &__content {
+      max-height: 90%;
+      padding: 35px;
+
+      h3 {
+        font-size: 15px;
+      }
+
+      form {
+
+        input,
+        textarea {
+          font-size: 12px;
+          margin-bottom: 10px;
+          padding: 10px 20px;
+        }
+      }
     }
   }
 }
