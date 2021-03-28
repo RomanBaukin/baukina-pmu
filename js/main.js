@@ -350,9 +350,35 @@ const slider = () => {
   startSlide();
 };
 
+// Отложенная загрузка карты
+const lazyLoad = () => {
+  const mapContainer = document.getElementById('map_container');
+  const optionsMap = {
+    once: true, //запуск один раз, и удаление наблюдателя сразу
+    passive: true,
+    capture: true
+  };
+  mapContainer.addEventListener('click', startLazyMap, optionsMap);
+  mapContainer.addEventListener('mouseover', startLazyMap, optionsMap);
+  mapContainer.addEventListener('touchstart', startLazyMap, optionsMap);
+  mapContainer.addEventListener('touchmove', startLazyMap, optionsMap);
+
+  let mapLoaded = false;
+
+  function startLazyMap() {
+    if (!mapLoaded) {
+      const mapBlock = document.getElementById('ymap_lazy');
+      mapLoaded = true;
+      mapBlock.setAttribute('src', mapBlock.getAttribute('data-src'));
+      mapBlock.removeAttribute('data-src');
+    }
+  }
+};
+
 
 togglePopUp();
 smoothScrolling();
 scrollingPage();
 sendForm();
 slider();
+lazyLoad();

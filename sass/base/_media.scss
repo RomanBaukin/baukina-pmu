@@ -95,12 +95,6 @@
         height: 160px;
       }
     }
-
-    &__map {
-      iframe {
-        width: 550px;
-      }
-    }
   }
 }
 
@@ -349,9 +343,7 @@
   }
 
   .map {
-    iframe {
-      width: 100%;
-    }
+    width: 50%;
   }
 }
 
@@ -546,6 +538,7 @@
 
   .map {
     height: 250px;
+    width: 100%;
   }
 
   .popup {
