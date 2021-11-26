@@ -1,4 +1,5 @@
 .course {
+  display: none;
   margin-bottom: 100px;
 
   .container {
@@ -112,7 +113,9 @@
     margin: 0;
   }
 
-  &__price {
+  &__price,
+  &__title,
+  &__duration {
     text-align: center;
   }
 
