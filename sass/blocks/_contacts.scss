@@ -11,7 +11,7 @@
   }
 
   &__form {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 
@@ -43,6 +43,7 @@
   &__address {
     display: flex;
     margin-top: 100px;
+    margin-bottom: 30px;
 
     img {
       margin-right: 20px;
